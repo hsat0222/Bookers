@@ -1,0 +1,16 @@
+<section class="show-book">
+
+	<p id="notice">
+    	<%=  notice %> <!-- #サクセスメッセージの表示 -->
+	</p>
+
+	<strong class="single-header">title:</strong>
+		<p class="single-title"><%= @book.title %></p>
+
+ 	<strong class="single-header">body:</strong>
+    	<p class="single-text"><%= @book.body %></p>
+
+    <p><%= link_to "Edit", edit_book_path(@book) %> |
+    <%= link_to "Back", books_path %></p>
+
+</section>
